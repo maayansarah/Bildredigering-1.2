@@ -154,7 +154,7 @@ img {
 
 html {
   font-family: "Inter", sans-serif;
-  color: rgb(35, 4, 4);
+  color: #4a2818;
 }
 /* tar bort underline */
 a {
@@ -177,7 +177,7 @@ ul {
 
   a:link,
   a:visited {
-    color: rgb(35, 4, 4);
+    color: #4a2818;
   }
 
   .text-underline {
@@ -257,7 +257,7 @@ body {
   margin: 2rem;
 
   & h1 {
-    color: rgb(35, 4, 4);
+    color: #4a2818;
     font-size: 2rem;
   }
 
@@ -266,11 +266,11 @@ body {
   }
 }
 
-before-after-container {
+.before-after-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  max-width: 50vh;
+  max-width: 100%;
 }
 
 .before-after-content {
@@ -308,21 +308,28 @@ before-after-container {
 
 .about-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  max-width: 50vh;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
   & h1 {
     font-family: "Inter", sans-serif;
     font-family: "Berkshire Swash", serif;
-    color: rgb(35, 4, 4);
+    color: #4a2818;
     font-size: 2rem;
   }
 
   & p {
     text-align: left;
+    line-height: 1.8;
   }
 }
 
@@ -335,4 +342,49 @@ before-after-container {
 
 footer {
   padding: 4rem 0 2rem 0;
+}
+
+/* desktop */
+@media (width > 768px) {
+  ul {
+    gap: 10rem;
+  }
+
+  .before-after-section {
+    & h1 {
+      padding: 5rem;
+    }
+  }
+
+  .before-after-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .how-to-1,
+  .how-to-2,
+  .how-to-3 {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .about-container {
+    margin-top: 3rem;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    & img {
+      flex: 1;
+      max-width: 50%;
+    }
+  }
 }
