@@ -166,6 +166,7 @@ a {
 
   & .logo {
     max-width: 300px;
+    padding: 2rem 0;
   }
 }
 
