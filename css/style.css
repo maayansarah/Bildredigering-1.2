@@ -162,8 +162,15 @@ a {
 }
 
 .header-section {
-  padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .logo {
+    max-width: 300px;
+  }
 }
 
 ul {
@@ -174,6 +181,7 @@ ul {
   flex-direction: row;
   gap: 3rem;
   padding: 2rem;
+  font-weight: bold;
 
   a:link,
   a:visited {
@@ -194,9 +202,9 @@ body {
   text-align: center;
 
   & h1 {
-    color: #f2a900;
+    color: #4a2818;
     font-family: "Berkshire Swash", serif;
-    font-size: 5vh;
+    font-size: 2rem;
     padding: 2rem;
   }
 }
@@ -244,8 +252,15 @@ body {
 }
 
 .img-description-content {
-  padding: 3rem;
+  padding: 0 3rem 3rem 3rem;
   text-align: left;
+
+  & h1 {
+    padding: 2rem 0 0 0;
+  }
+
+  & p {
+  }
 }
 
 /* redigering sida */
@@ -280,6 +295,7 @@ body {
 
   p {
     text-align: left;
+    line-height: 1.8;
   }
 }
 
